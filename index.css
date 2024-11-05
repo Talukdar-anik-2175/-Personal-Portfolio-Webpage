@@ -1,0 +1,126 @@
+/* Basic Styling */
+body {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+
+padding: 0;
+background-color: #f8fff4; /* Light greenish-white background */
+color: #333;
+}
+/* Navbar Styling */
+#navbar {
+background-color: #2e7d32; /* Dark green */
+color: #fff;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 1;
+display: flex;
+justify-content: space-around;
+padding: 10px 0;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#navbar ul {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+#navbar a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s;
+}
+#navbar a:hover {
+color: #a5d6a7; /* Light green */
+}
+/* Welcome Section */
+#welcome-section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #a5d6a7; /* Soft green */
+
+text-align: center;
+color: #fff;
+}
+#welcome-section h1 {
+font-size: 4rem;
+margin: 0;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#welcome-section p {
+font-size: 1.5rem;
+margin-top: 15px;
+}
+/* Projects Section */
+#projects {
+padding: 50px 20px;
+background-color: #f8fff4; /* Greenish-white */
+}
+#projects h2 {
+text-align: center;
+color: #2e7d32; /* Dark green */
+margin-bottom: 40px;
+}
+.project-tile {
+background-color: #fff;
+border-radius: 15px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+padding: 20px;
+margin-bottom: 20px;
+transition: transform 0.3s, box-shadow 0.3s;
+text-align: center;
+}
+.project-tile:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.project-tile a {
+color: #2e7d32; /* Dark green */
+
+text-decoration: none;
+font-weight: bold;
+display: block;
+padding: 10px 0;
+transition: color 0.3s;
+}
+.project-tile a:hover {
+color: #66bb6a; /* Brighter green */
+}
+/* Footer */
+footer {
+text-align: center;
+margin: 30px 0;
+background-color: #2e7d32; /* Dark green */
+padding: 15px;
+color: #fff;
+}
+#profile-link {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s;
+}
+#profile-link:hover {
+color: #a5d6a7; /* Light green */
+}
+/* Media Query */
+@media (max-width: 768px) {
+#navbar ul {
+flex-direction: column;
+align-items: center;
+}
+#navbar a {
+padding: 10px 0;
+}
+#welcome-section h1 {
+font-size: 3rem;
+
+}
+.project-tile {
+text-align: center;
+}
+}
